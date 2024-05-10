@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title style="color: lightorange;">Lesson Available</title>
+  <style>
+    body {
+      font-family: "Century Gothic ", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('fff.jpg'); /* Add your background image here */
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+    .header {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .tabs {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .tab {
+      padding: 10px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: 1px solid #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-bottom: 10px;
+    }
+    .tab:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .lesson-content {
+      display: none;
+      padding: 20px;
+    }
+    .active {
+      display: block;
+    }
+    .importance {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+    }
+    .importance h2 {
+      color: lightorange;
+    }
+    .importance p {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1 style="color: black;">Lesson Available</h1>
+  </div>
+
+  <div class="tabs">
+    <div class="tab" onclick="openLesson('https://www.intechopen.com/chapters/84738')">Lesson 1</div>
+    <div class="tab" onclick="openLesson('https://www.example.com/lesson2')">Lesson 2</div>
+    <div class="tab" onclick="openLesson('https://www.example.com/lesson3')">Lesson 3</div>
+    <div class="tab" onclick="openLesson('https://www.example.com/lesson4')">Lesson 4</div>
+    <div class="tab" onclick="openLesson('https://www.example.com/lesson5')">Lesson 5</div>
+    <!-- Add more tabs as needed -->
+  </div>
+
+  <div class="importance">
+    <h2 style="font-size: 80px;color: black;font-style:roboto;">Learning is Essential</h2>
+    <p style="font-size: 30px; font-family: sans-serif;">Learning is essential for personal growth, professional development, and societal progress. It expands our horizons, enhances our skills, and empowers us to adapt to change. Embrace learning as a lifelong journey towards success and fulfillment.</p>
+  </div>
+
+  <script>
+    function openLesson(lessonLink) {
+      window.open(lessonLink, '_blank');
+    }
+  </script>
+</body>
+</html>
